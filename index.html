@@ -42,6 +42,71 @@
 			<div class="slides">
 			  <section>
 			    <h1>Perl + literature</h1>
+			    <h2 class='fragment'>== 'Charlie Stross'</h2>
+			  </section>
+
+			  <section>
+			    <h2><code>lujoyglamour.net</code></h2>
+			    <h3 class='fragment'>== <code>Net::Lujoyglamour</code></h3>
+			    <aside class='notes'>The full novel, in a
+			      PDF, is included in the text
+			      file</aside>
+			  </section>
+
+			  <section>
+			    <section>
+			      <h2>Manuel, the magnificent mechanical
+				man</h2>
+			      <h3 class='fragment'>== Novel
+			      in <a href='http://search.cpan.org/~jmerelo/Text-Hoborg-0.0.6/lib/Text/Hoborg/Manuel.pod'>a
+			      POD</a></h3>
+			    </section>
+
+			    <section>
+			      <h1>Using git</h1>
+			      <h2 class='fragment'>+Continuous
+			      integration</h2>
+			    </section>
+
+			    			  
+			    <section>
+			      <img src='img/1.png' alt='git'>
+			    </section>
+			    
+			    
+			    <section>
+			      <h2>When I woke up, the velociraptor was
+				still there</h2>
+			      
+			      <aside class='notes'>This is one of the
+				most famous literary one-liners. And
+				Perl is famous for its one-liners. So we
+				can do it better.</aside>
+			    </section>
+			  </section>
+
+			  <section>
+			    <h1><code>Test::Text</code></h1>
+			  </section>
+
+			  <section>
+			    <pre><code>cpanm  ExtUtils::PkgConfig Test::Text TAP::Harness</code></pre>
+			    <pre class='fragment'><code>perl -MTAP::Harness -e '
+use utf8; 
+my $harness = TAP::Harness->new( { verbosity => 0} ); 
+die "FAIL" if  $harness->runtests( "t/just_check.t" )->failed;
+'</code></pre>
+                          </section>
+
+                          <section>
+			    <h1>Grammar</h1>
+			    <h2 class='fragment'>Quality </h2>
+			    <h3 class='fragment'>Plot holes?</h3>
+			  </section>
+
+			  <section>
+			    <h1>Literary engineering!</h1>
+			  </section>
 			</div>
 
 		</div>
